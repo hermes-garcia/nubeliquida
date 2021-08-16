@@ -26,7 +26,6 @@ jobs:
             cp sitemap_index.xml $DEPLOYPATH
             cp composer* $DEPLOYPATH
             cp .htaccess $DEPLOYPATH
-            cp -R contactform/ $DEPLOYPATH
             cp -R css/ $DEPLOYPATH
             cp -R fonts/ $DEPLOYPATH
             cp -R img/ $DEPLOYPATH
