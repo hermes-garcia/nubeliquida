@@ -1,0 +1,497 @@
+html, body {
+    scroll-behavior: smooth;
+}
+body {
+	line-height: 1.2;
+    height: 100%;
+
+	font-family: 'Open Sans', sans-serif;
+
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+}
+body::after {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/banner06.jpg') no-repeat center top;
+    background-size: cover;
+    content: "";
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.content {
+	color: #fff;
+}
+.logo img {
+	display: inline-block;
+}
+.logo h2 {
+	font-family: 'Lobster', cursive;
+	font-size: 34px;
+    padding-top: 40px;
+}
+#countdown {
+    text-align: center;
+    margin:  80px 0 70px;
+    min-height: 104px;
+}
+#countdown > div {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 52px;
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin: 0 1% 10px;
+}
+#countdown > div > span {
+	display: block;
+}
+.input-group-addon {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.sub-p {
+	font-size: 14px;
+	padding: 5px 0 15px;
+}
+.social ul li {
+	display: inline-block;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	margin-right: 10px;
+}
+.section-padding {
+	padding: 60px 60px 60px 60px;
+}
+.about-title h2 {
+	font-size: 24px;
+	font-family: 'Lobster', cursive;
+	padding-bottom: 10px;
+}
+.about-title p{
+    max-width: 550px;
+    margin: 0 auto;
+}
+.img {
+	margin-top: 30px;
+}
+.img i {
+	font-size: 44px;
+}
+.subscription-info {
+    width: 40%;
+    margin: 0 auto 10px;
+}
+.abt-hd {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px 0 15px;
+}
+.contact-title i {
+    color: #FFFFFF;
+    font-size: 1.8em;
+    text-align: right;
+    display: block;
+    padding: 65px 0 0 0;
+    margin-right: 13%;
+}
+.contact-title h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 15px 0 30px;
+}
+.contact-title p {
+    text-align: right;
+    margin-top: -5px;
+    color: rgba(236,240,241,0.9);
+    font-size: 18px;
+    word-spacing: 1px;
+    line-height: 25px;
+    padding-bottom: 30px;
+    max-width: 90%;
+    margin-left: 10%;
+}
+.contact input[type="text"], .contact input[type="email"] {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #EDEDED;
+    margin-bottom: 20px;
+    font-size: 13px;
+    outline: none;
+    color: #ffffff;
+}
+.social a i {
+    color: #fff;
+    display: block;
+    line-height: 48px;
+}
+.social a:hover {
+    text-decoration: none;
+}
+#contact-info {
+	padding: 0 0 40px;
+}
+.contact textarea {
+    width: 100%;
+    background: transparent;
+    font-size: 13px;
+    padding: 15px;
+    height: 125px;
+    border: 1px solid #EDEDED;
+    outline: none;
+    resize: none;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.contact-submit {
+    background-color: #019bd1;
+    border: 2px solid #019bd1;
+    color: #FFFFFF;
+    width: 100%;
+    display: block;
+    word-spacing: 1px;
+    outline: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 10px auto 0;
+    font-weight: 700;
+    padding: 10px;
+    -webkit-transition: all 0.3s ease-in-out !important;
+    -moz-transition: all 0.3s ease-in-out !important;
+    -ms-transition: all 0.3s ease-in-out !important;
+    -o-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
+}
+.validation {
+    color: red;
+    display:none;
+    margin: 0 0 20px;
+    font-weight:400;
+    font-size:13px;
+}
+.news-validation {
+    color: red;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #FFF, 0 -1px 0 #fff;
+    text-align: left;
+    display:none;
+    margin: 0 0 20px 10%;
+    font-weight:400;
+    font-size:13px;
+}
+#sendmessage {
+    color: green;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #FFF, 0 -1px 0 #fff;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+#errormessage {
+    color: red;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #FFF, 0 -1px 0 #fff;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+#sendmessage.show, #errormessage.show, .show {
+	display:block;
+}
+#sendsubscription {
+    color: green;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #FFF, 0 -1px 0 #fff;
+    border:1px solid green;
+    display:none;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+#errorsubscription {
+    color: red;
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #FFF, 0 -1px 0 #fff;
+    display:none;
+    border:1px solid red;
+    text-align:center;
+    padding:15px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+#sendsubscription.show, #errorsubscription.show, .show {
+    display:block;
+}
+footer {
+    padding: 30px;
+    color: #fff;
+    text-align: center;
+    background-color: #019bd11a;
+}
+.footer a {
+    color: #019bd1;
+}
+.credits {
+    padding-top: 10px;
+}
+.subscribe_form {
+    position: relative;
+}
+.subscribe_form .subscribe {
+    width: 100%;
+    height: 50px;
+    color: #FFF;
+    background-color: #019bd1;
+    border: medium none;
+    font-family: "Open Sans",serif;
+    font-size: 18px;
+    border-radius: 0 20px 20px 0;
+}
+.subscribe-button{
+    margin-right: 0 !important;
+}
+.seconds{
+    font-size: 18px;
+}
+h2.subs-title  {
+    font-family: 'Lato', cursive;
+    font-size: 34px;
+    padding: 30px 0 20px;
+}
+label.subs-title  {
+    font-family: -webkit-body;
+    font-size: 34px;
+    padding: 30px 0 20px;
+    font-weight: normal;
+}
+.subscribe_form input {
+    height: 50px;
+    border: none;
+    width: 100%;
+    font-family: inherit;
+    font-size: 15px;
+    border-radius: 30px 0 0 30px;
+    color: #000;
+}
+.subscribe_form input[type=email] {
+    padding-left: 30px;
+    padding-right: 10px;
+}
+.logo-image{
+    width: 250px;
+}
+.centered-list{
+    padding: 0;
+}
+.subscribe-input{
+    padding: 0;
+}
+.subscribe-submit{
+     padding: 0;
+ }
+.container{
+    max-width: 95%;
+}
+.message-section{
+    max-width: 95%;
+    margin: 0 auto;
+}
+.info-p{
+    max-width: 95%;
+    margin: 0 auto;
+}
+.hidden-labels{
+    display: none;
+}
+
+/* PRELOADER */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #019bd1;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+.loader-custom {
+    display: none;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+.loader-custom .loader-custom-inside {
+    display: block;
+    content: "";
+    position: fixed;
+    overflow: hidden;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #019bd1;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+@-webkit-keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* BACK TO TOP BUTTON */
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #019bd1;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+.back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+}
+/**********************************
+Media Queries
+***********************************/
+@media (min-width: 992px) and (max-width: 1200px) {
+    .subscribe-button{
+        width: 80%;
+        margin-right: 20% !important;
+    }
+    .subscription-info{
+        width: 50%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .subscribe_form input{
+        width: 100%;
+    }
+    .subscription-info {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .subscribe_form .subscribe {
+        width: 100%;
+        font-size: 15px;
+        right: 13%;
+    }
+    .contact-title i, .contact-title h2, .contact-title p {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .subscription-info {
+        width: 60%;
+    }
+    .contact-title i, .contact-title h2, .contact-title p {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 575px) {
+    .subscription-info {
+        width: 80%;
+    }
+    .contact-title i, .contact-title h2, .contact-title p {
+        text-align: center;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+    body{
+        overflow-x:hidden;
+    }
+}
+@media (max-width: 991px) {
+    .section-padding {
+        padding: 60px 30px;
+    }
+}
